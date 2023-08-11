@@ -16,7 +16,7 @@ export const registerAudioChatListener = (audioChatPopup) => {
 
   socket.on("chat-exit", () => {
     snackbar.configure(
-      `${audioChatPopup.loggedInUser.username} has left the audio chat!`,
+      `${audioChatPopup.participant.username} has left the audio chat!`,
       "sad"
     );
     snackbar.show();

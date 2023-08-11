@@ -15,7 +15,7 @@ export const setState = (update) => {
   state = update;
 };
 
-export const socket = io("http://192.168.31.132:5000/");
+export const socket = io();
 export const snackbar = new Snackbar();
 socket.on("connect", () => {
   console.log("Connected to the server...");
